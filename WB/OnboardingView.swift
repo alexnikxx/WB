@@ -77,7 +77,6 @@ struct OnboardingView: View {
                 }
             }
         }
-        .tint(.black)
     }
 }
 

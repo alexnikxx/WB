@@ -15,6 +15,7 @@
 		2A6A11662C13D2600086491F /* SFProDisplaySemibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A6A11652C13D2600086491F /* SFProDisplaySemibold.ttf */; };
 		2A6A11682C13D2710086491F /* SFProDisplayBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A6A11672C13D2710086491F /* SFProDisplayBold.ttf */; };
 		2AC6CDA72C16FAA2007D80FF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC6CDA62C16FAA2007D80FF /* MainView.swift */; };
+		2AC6CDAB2C170757007D80FF /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC6CDAA2C170757007D80FF /* CustomBackButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		2A6A11652C13D2600086491F /* SFProDisplaySemibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFProDisplaySemibold.ttf; sourceTree = "<group>"; };
 		2A6A11672C13D2710086491F /* SFProDisplayBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFProDisplayBold.ttf; sourceTree = "<group>"; };
 		2AC6CDA62C16FAA2007D80FF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		2AC6CDAA2C170757007D80FF /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				2A6A114F2C13C14E0086491F /* WBApp.swift */,
 				2A6A11512C13C14E0086491F /* ContentView.swift */,
 				2AC6CDA62C16FAA2007D80FF /* MainView.swift */,
+				2AC6CDAA2C170757007D80FF /* CustomBackButton.swift */,
 				2A6A115D2C13C38F0086491F /* OnboardingView.swift */,
 				2A6A11532C13C14F0086491F /* Assets.xcassets */,
 				2A6A115F2C13CF610086491F /* Fonts */,
@@ -162,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A6A115E2C13C38F0086491F /* OnboardingView.swift in Sources */,
+				2AC6CDAB2C170757007D80FF /* CustomBackButton.swift in Sources */,
 				2AC6CDA72C16FAA2007D80FF /* MainView.swift in Sources */,
 				2A6A11522C13C14E0086491F /* ContentView.swift in Sources */,
 				2A6A11502C13C14E0086491F /* WBApp.swift in Sources */,
