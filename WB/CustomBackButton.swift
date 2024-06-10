@@ -15,7 +15,7 @@ struct CustomBackButton: View {
             dismiss()
         } label: {
             Image(systemName: "chevron.left")
-                .foregroundStyle(.black)
+                .foregroundStyle(.text)
                 .font(.caption.bold())
         }
     }
