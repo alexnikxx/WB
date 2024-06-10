@@ -42,8 +42,8 @@ struct OnboardingView: View {
                                 .foregroundStyle(.text)
                         }
 
-                        Button {
-
+                        NavigationLink {
+                            MainView()
                         } label: {
                             Text("Начать общаться")
                                 .font(Font.custom("SF Pro Display", size: 16))
@@ -61,17 +61,23 @@ struct OnboardingView: View {
             }
             .sheet(isPresented: $isShowingTerms) {
                 VStack {
-                    Text("Пользовательское соглашение")
-                        .frame(maxHeight: .infinity, alignment: .center)
-
                     Button {
                         isShowingTerms = false
                     } label: {
-                        Text("Dismiss")
+                        Image(systemName: "xmark.circle.fill")
+                            .resizable()
+                            .frame(width: 24, height: 24)
+                            .frame(maxWidth: .infinity, alignment: .trailing)
+                            .foregroundStyle(.gray)
                     }
+                    .padding()
+
+                    Text("Пользовательское соглашение")
+                        .frame(maxHeight: .infinity, alignment: .center)
                 }
             }
         }
+        .tint(.black)
     }
 }
 
