@@ -16,6 +16,7 @@
 		2A6A11682C13D2710086491F /* SFProDisplayBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A6A11672C13D2710086491F /* SFProDisplayBold.ttf */; };
 		2AC6CDA72C16FAA2007D80FF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC6CDA62C16FAA2007D80FF /* MainView.swift */; };
 		2AC6CDAB2C170757007D80FF /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC6CDAA2C170757007D80FF /* CustomBackButton.swift */; };
+		2AC6CDAD2C170E97007D80FF /* TermsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC6CDAC2C170E97007D80FF /* TermsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		2A6A11672C13D2710086491F /* SFProDisplayBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFProDisplayBold.ttf; sourceTree = "<group>"; };
 		2AC6CDA62C16FAA2007D80FF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		2AC6CDAA2C170757007D80FF /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
+		2AC6CDAC2C170E97007D80FF /* TermsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +66,10 @@
 			children = (
 				2A6A11642C13D0650086491F /* Info.plist */,
 				2A6A114F2C13C14E0086491F /* WBApp.swift */,
+				2AC6CDAE2C170F03007D80FF /* Onboarding */,
 				2A6A11512C13C14E0086491F /* ContentView.swift */,
 				2AC6CDA62C16FAA2007D80FF /* MainView.swift */,
 				2AC6CDAA2C170757007D80FF /* CustomBackButton.swift */,
-				2A6A115D2C13C38F0086491F /* OnboardingView.swift */,
 				2A6A11532C13C14F0086491F /* Assets.xcassets */,
 				2A6A115F2C13CF610086491F /* Fonts */,
 				2A6A11552C13C14F0086491F /* Preview Content */,
@@ -90,6 +92,15 @@
 				2A6A11652C13D2600086491F /* SFProDisplaySemibold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		2AC6CDAE2C170F03007D80FF /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				2A6A115D2C13C38F0086491F /* OnboardingView.swift */,
+				2AC6CDAC2C170E97007D80FF /* TermsView.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +179,7 @@
 				2AC6CDAB2C170757007D80FF /* CustomBackButton.swift in Sources */,
 				2AC6CDA72C16FAA2007D80FF /* MainView.swift in Sources */,
 				2A6A11522C13C14E0086491F /* ContentView.swift in Sources */,
+				2AC6CDAD2C170E97007D80FF /* TermsView.swift in Sources */,
 				2A6A11502C13C14E0086491F /* WBApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

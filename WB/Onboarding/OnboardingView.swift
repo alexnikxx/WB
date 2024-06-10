@@ -60,21 +60,7 @@ struct OnboardingView: View {
                 .padding()
             }
             .sheet(isPresented: $isShowingTerms) {
-                VStack {
-                    Button {
-                        isShowingTerms = false
-                    } label: {
-                        Image(systemName: "xmark.circle.fill")
-                            .resizable()
-                            .frame(width: 24, height: 24)
-                            .frame(maxWidth: .infinity, alignment: .trailing)
-                            .foregroundStyle(.gray)
-                    }
-                    .padding()
-
-                    Text("Пользовательское соглашение")
-                        .frame(maxHeight: .infinity, alignment: .center)
-                }
+                TermsView()
             }
         }
     }
