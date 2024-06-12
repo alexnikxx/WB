@@ -14,9 +14,14 @@
 		2A6A115E2C13C38F0086491F /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6A115D2C13C38F0086491F /* OnboardingView.swift */; };
 		2A6A11662C13D2600086491F /* SFProDisplaySemibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A6A11652C13D2600086491F /* SFProDisplaySemibold.ttf */; };
 		2A6A11682C13D2710086491F /* SFProDisplayBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A6A11672C13D2710086491F /* SFProDisplayBold.ttf */; };
-		2AC6CDA72C16FAA2007D80FF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC6CDA62C16FAA2007D80FF /* MainView.swift */; };
+		2AC6CDA72C16FAA2007D80FF /* VerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC6CDA62C16FAA2007D80FF /* VerificationView.swift */; };
 		2AC6CDAB2C170757007D80FF /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC6CDAA2C170757007D80FF /* CustomBackButton.swift */; };
 		2AC6CDAD2C170E97007D80FF /* TermsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC6CDAC2C170E97007D80FF /* TermsView.swift */; };
+		2AFA57382C1A4EE1001D6ED7 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA57372C1A4EE1001D6ED7 /* ContactsView.swift */; };
+		2AFA573A2C1A4EFE001D6ED7 /* ChatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA57392C1A4EFE001D6ED7 /* ChatsView.swift */; };
+		2AFA573C2C1A4F11001D6ED7 /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA573B2C1A4F11001D6ED7 /* MoreView.swift */; };
+		2AFA573E2C1A4F77001D6ED7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA573D2C1A4F77001D6ED7 /* MainView.swift */; };
+		2AFA57402C1A5477001D6ED7 /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFA573F2C1A5477001D6ED7 /* Tabs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +34,14 @@
 		2A6A11642C13D0650086491F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2A6A11652C13D2600086491F /* SFProDisplaySemibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFProDisplaySemibold.ttf; sourceTree = "<group>"; };
 		2A6A11672C13D2710086491F /* SFProDisplayBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFProDisplayBold.ttf; sourceTree = "<group>"; };
-		2AC6CDA62C16FAA2007D80FF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		2AC6CDA62C16FAA2007D80FF /* VerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationView.swift; sourceTree = "<group>"; };
 		2AC6CDAA2C170757007D80FF /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
 		2AC6CDAC2C170E97007D80FF /* TermsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsView.swift; sourceTree = "<group>"; };
+		2AFA57372C1A4EE1001D6ED7 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		2AFA57392C1A4EFE001D6ED7 /* ChatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsView.swift; sourceTree = "<group>"; };
+		2AFA573B2C1A4F11001D6ED7 /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
+		2AFA573D2C1A4F77001D6ED7 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		2AFA573F2C1A5477001D6ED7 /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,9 +77,13 @@
 				2A6A11642C13D0650086491F /* Info.plist */,
 				2A6A114F2C13C14E0086491F /* WBApp.swift */,
 				2AC6CDAE2C170F03007D80FF /* Onboarding */,
+				2AFA57362C1A4EBB001D6ED7 /* Contacts */,
 				2A6A11512C13C14E0086491F /* ContentView.swift */,
-				2AC6CDA62C16FAA2007D80FF /* MainView.swift */,
+				2AFA573D2C1A4F77001D6ED7 /* MainView.swift */,
+				2AFA573F2C1A5477001D6ED7 /* Tabs.swift */,
 				2AC6CDAA2C170757007D80FF /* CustomBackButton.swift */,
+				2AFA57392C1A4EFE001D6ED7 /* ChatsView.swift */,
+				2AFA573B2C1A4F11001D6ED7 /* MoreView.swift */,
 				2A6A11532C13C14F0086491F /* Assets.xcassets */,
 				2A6A115F2C13CF610086491F /* Fonts */,
 				2A6A11552C13C14F0086491F /* Preview Content */,
@@ -99,8 +113,17 @@
 			children = (
 				2A6A115D2C13C38F0086491F /* OnboardingView.swift */,
 				2AC6CDAC2C170E97007D80FF /* TermsView.swift */,
+				2AC6CDA62C16FAA2007D80FF /* VerificationView.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		2AFA57362C1A4EBB001D6ED7 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				2AFA57372C1A4EE1001D6ED7 /* ContactsView.swift */,
+			);
+			path = Contacts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,12 +198,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AFA573A2C1A4EFE001D6ED7 /* ChatsView.swift in Sources */,
+				2AFA573C2C1A4F11001D6ED7 /* MoreView.swift in Sources */,
 				2A6A115E2C13C38F0086491F /* OnboardingView.swift in Sources */,
+				2AFA573E2C1A4F77001D6ED7 /* MainView.swift in Sources */,
+				2AFA57402C1A5477001D6ED7 /* Tabs.swift in Sources */,
 				2AC6CDAB2C170757007D80FF /* CustomBackButton.swift in Sources */,
-				2AC6CDA72C16FAA2007D80FF /* MainView.swift in Sources */,
+				2AC6CDA72C16FAA2007D80FF /* VerificationView.swift in Sources */,
 				2A6A11522C13C14E0086491F /* ContentView.swift in Sources */,
 				2AC6CDAD2C170E97007D80FF /* TermsView.swift in Sources */,
 				2A6A11502C13C14E0086491F /* WBApp.swift in Sources */,
+				2AFA57382C1A4EE1001D6ED7 /* ContactsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

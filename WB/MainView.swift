@@ -2,22 +2,34 @@
 //  MainView.swift
 //  WB
 //
-//  Created by Aleksandra Nikiforova on 10/06/24.
+//  Created by Aleksandra Nikiforova on 12/06/24.
 //
 
 import SwiftUI
 
 struct MainView: View {
-    var body: some View {
-        ZStack {
-            Color.back.ignoresSafeArea()
+    @State private var selectedTab: Tabs = .contacts
 
-            VStack {
-                Text("Hello, World!")
-            }
+    var body: some View {
+        TabView {
+            ContactsView()
+                .tabItem {
+                    Image("contacts")
+                }
+                .tag(Tabs.contacts)
+
+            ChatsView()
+                .tabItem {
+                    Image("chats")
+                }
+                .tag(Tabs.chats)
+
+            MoreView()
+                .tabItem {
+                    Image("more")
+                }
+                .tag(Tabs.more)
         }
-        .navigationBarBackButtonHidden(true)
-        .navigationBarItems(leading: CustomBackButton())
     }
 }
 

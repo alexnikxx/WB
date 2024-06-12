@@ -43,7 +43,7 @@ struct OnboardingView: View {
                         }
 
                         NavigationLink {
-                            MainView()
+                            VerificationView()
                         } label: {
                             Text("Начать общаться")
                                 .font(Font.custom("SF Pro Display", size: 16))
