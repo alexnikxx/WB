@@ -12,11 +12,26 @@ struct MainView: View {
 
     var body: some View {
         TabView {
-            ContactsView()
-                .tabItem {
-                    Image("contacts")
-                }
-                .tag(Tabs.contacts)
+            NavigationStack {
+                ContactsView()
+                    .toolbar {
+                        ToolbarItem(placement: .topBarLeading) {
+                            Text("Контакты")
+                                .font(Font.custom("SF Pro Display", size: 18))
+                                .fontWeight(.semibold)
+                                .foregroundStyle(.text)
+                        }
+
+                        ToolbarItem(placement: .topBarTrailing) {
+                            Image("plus")
+                                .foregroundStyle(.text)
+                        }
+                    }
+            }
+                    .tabItem {
+                        Image("contacts")
+                    }
+                    .tag(Tabs.contacts)
 
             ChatsView()
                 .tabItem {
