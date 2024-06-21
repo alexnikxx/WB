@@ -15,11 +15,11 @@ enum Tab: CaseIterable {
     var iconName: String {
         switch self {
         case .contacts:
-            return "contacts"
+            "contacts"
         case .chats:
-            return "chats"
+            "chats"
         case .more:
-            return "more"
+            "more"
         }
     }
 }

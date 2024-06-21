@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct CustomSearchBar: View {
+    @StateObject private var viewModel = ContactsViewModel()
+    @Binding var searchText: String
+
     var body: some View {
         ZStack {
             Rectangle()
@@ -18,10 +21,10 @@ struct CustomSearchBar: View {
             HStack(spacing: 8) {
                 Image("search")
 
-                Text("Search")
+                TextField("Search", text: $searchText)
                     .font(Font.custom("SF Pro Display", size: 14))
                     .fontWeight(.semibold)
-                    .foregroundStyle(.secondaryText)
+                    .foregroundStyle(.text)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(8)
@@ -32,5 +35,5 @@ struct CustomSearchBar: View {
 
 
 #Preview {
-    CustomSearchBar()
+    CustomSearchBar(searchText: .constant("Example"))
 }

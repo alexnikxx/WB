@@ -15,7 +15,7 @@ struct ContactsView: View {
 
             ScrollView {
                 VStack(spacing: 4) {
-                    CustomSearchBar()
+                    CustomSearchBar(searchText: $viewModel.searchText)
                         .padding(.top, 20)
 
                     ForEach(viewModel.filteredContacts, id: \.self) { contact in
@@ -24,7 +24,6 @@ struct ContactsView: View {
                             .padding(.horizontal)
                     }
                 }
-//                .searchable(text: $viewModel.searchText)
             }
         }
         .padding(.horizontal, 12)

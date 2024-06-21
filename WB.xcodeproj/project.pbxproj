@@ -67,6 +67,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A54A0FB2C25129F007A1946 /* CustomElements */ = {
+			isa = PBXGroup;
+			children = (
+				2A54A0F32C24FE8B007A1946 /* CustomTabBar.swift */,
+				2AC6CDAA2C170757007D80FF /* CustomBackButton.swift */,
+				2A54A0ED2C24DDAC007A1946 /* CustomSearchBar.swift */,
+			);
+			path = CustomElements;
+			sourceTree = "<group>";
+		};
 		2A6A11432C13C14E0086491F = {
 			isa = PBXGroup;
 			children = (
@@ -89,12 +99,11 @@
 				2A6A11642C13D0650086491F /* Info.plist */,
 				2A6A114F2C13C14E0086491F /* WBApp.swift */,
 				2AFA573D2C1A4F77001D6ED7 /* MainView.swift */,
-				2A54A0F32C24FE8B007A1946 /* CustomTabBar.swift */,
+				2A54A0FB2C25129F007A1946 /* CustomElements */,
 				2AC6CDAE2C170F03007D80FF /* Onboarding */,
 				2AFA57362C1A4EBB001D6ED7 /* Contacts */,
 				2A6A11512C13C14E0086491F /* ContentView.swift */,
 				2AFA573F2C1A5477001D6ED7 /* Tab.swift */,
-				2AC6CDAA2C170757007D80FF /* CustomBackButton.swift */,
 				2AFA57392C1A4EFE001D6ED7 /* ChatsView.swift */,
 				2AFA573B2C1A4F11001D6ED7 /* MoreView.swift */,
 				2A6A11532C13C14F0086491F /* Assets.xcassets */,
@@ -136,7 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				2AFA57372C1A4EE1001D6ED7 /* ContactsView.swift */,
-				2A54A0ED2C24DDAC007A1946 /* CustomSearchBar.swift */,
 				2A54A0EB2C24D731007A1946 /* ContactsViewModel.swift */,
 				2A54A0E52C2389AC007A1946 /* ContactCell.swift */,
 				2A54A0E32C237D93007A1946 /* Contact.swift */,
