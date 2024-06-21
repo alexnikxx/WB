@@ -13,6 +13,7 @@
 		2A54A0EC2C24D731007A1946 /* ContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A54A0EB2C24D731007A1946 /* ContactsViewModel.swift */; };
 		2A54A0EE2C24DDAC007A1946 /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A54A0ED2C24DDAC007A1946 /* CustomSearchBar.swift */; };
 		2A54A0F42C24FE8B007A1946 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A54A0F32C24FE8B007A1946 /* CustomTabBar.swift */; };
+		2A54A0FD2C2512D6007A1946 /* ContactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A54A0FC2C2512D6007A1946 /* ContactDetailView.swift */; };
 		2A6A11502C13C14E0086491F /* WBApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6A114F2C13C14E0086491F /* WBApp.swift */; };
 		2A6A11522C13C14E0086491F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6A11512C13C14E0086491F /* ContentView.swift */; };
 		2A6A11542C13C14F0086491F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A6A11532C13C14F0086491F /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 		2A54A0EB2C24D731007A1946 /* ContactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewModel.swift; sourceTree = "<group>"; };
 		2A54A0ED2C24DDAC007A1946 /* CustomSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
 		2A54A0F32C24FE8B007A1946 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		2A54A0FC2C2512D6007A1946 /* ContactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailView.swift; sourceTree = "<group>"; };
 		2A6A114C2C13C14E0086491F /* WB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A6A114F2C13C14E0086491F /* WBApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBApp.swift; sourceTree = "<group>"; };
 		2A6A11512C13C14E0086491F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				2AFA57372C1A4EE1001D6ED7 /* ContactsView.swift */,
+				2A54A0FC2C2512D6007A1946 /* ContactDetailView.swift */,
 				2A54A0EB2C24D731007A1946 /* ContactsViewModel.swift */,
 				2A54A0E52C2389AC007A1946 /* ContactCell.swift */,
 				2A54A0E32C237D93007A1946 /* Contact.swift */,
@@ -233,6 +236,7 @@
 				2A54A0EC2C24D731007A1946 /* ContactsViewModel.swift in Sources */,
 				2A54A0E62C2389AC007A1946 /* ContactCell.swift in Sources */,
 				2A6A115E2C13C38F0086491F /* OnboardingView.swift in Sources */,
+				2A54A0FD2C2512D6007A1946 /* ContactDetailView.swift in Sources */,
 				2AFA573E2C1A4F77001D6ED7 /* MainView.swift in Sources */,
 				2AFA57402C1A5477001D6ED7 /* Tab.swift in Sources */,
 				2AC6CDAB2C170757007D80FF /* CustomBackButton.swift in Sources */,
