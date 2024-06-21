@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CustomTabBar: View {
+    @Environment(\.colorScheme) var colorScheme
     @Binding var selectedTab: Tab
 
     var body: some View {
@@ -15,7 +16,7 @@ struct CustomTabBar: View {
             Rectangle()
                 .foregroundStyle(.back)
                 .frame(height: 84)
-                .shadow(color: .text.opacity(0.04), radius: 12, x: 0, y: -1)
+                .shadow(color: .text.opacity(colorScheme == .light ? 0.04 : 0), radius: 12, x: 0, y: -1)
 
             HStack {
                 ForEach(Tab.allCases, id: \.self) { tab in
