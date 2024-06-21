@@ -45,7 +45,6 @@ struct ContactCell: View {
                         }
                     }
                 }
-                .offset(x: contact.hasStories ? -4 : 0, y: 0)
 
                 VStack(alignment: .leading, spacing: 8) {
                     Text(contact.fullName)
@@ -58,8 +57,10 @@ struct ContactCell: View {
                         .foregroundStyle(.secondaryText)
                 }
 
+
                 Spacer()
             }
+            .offset(x: contact.hasStories ? -4 : 0, y: 0)
         }
         .padding()
     }
