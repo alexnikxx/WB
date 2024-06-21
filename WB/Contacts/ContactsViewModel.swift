@@ -8,7 +8,18 @@
 import Foundation
 
 final class ContactsViewModel: ObservableObject {
-    var searchText = ""
+    @Published var searchText = ""
+    @Published var contacts = Contact.samples
 
-    
+    var filteredContacts: [Contact] {
+        get {
+            if searchText == "" {
+                contacts
+            } else {
+                contacts.filter { contact in
+                    contact.fullName.lowercased().contains(searchText.lowercased())
+                }
+            }
+        }
+    }
 }

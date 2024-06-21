@@ -11,16 +11,23 @@ struct ContactsView: View {
     @StateObject private var viewModel = ContactsViewModel()
 
     var body: some View {
-        ScrollView {
-            VStack(spacing: 4) {
-                ForEach(Contact.samples, id: \.self) { contact in
-                    ContactCell(contact: contact)
-                    Divider()
-                        .padding(.horizontal)
+        VStack {
+
+            ScrollView {
+                VStack(spacing: 4) {
+                    CustomSearchBar()
+                        .padding(.top, 20)
+
+                    ForEach(viewModel.filteredContacts, id: \.self) { contact in
+                        ContactCell(contact: contact)
+                        Divider()
+                            .padding(.horizontal)
+                    }
                 }
 //                .searchable(text: $viewModel.searchText)
             }
         }
+        .padding(.horizontal, 12)
     }
 }
 

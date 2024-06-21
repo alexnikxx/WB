@@ -8,45 +8,49 @@
 import SwiftUI
 
 struct MainView: View {
-    @State private var selectedTab: Tabs = .contacts
+    @State private var selectedTab: Tab = .contacts
 
     var body: some View {
-        TabView {
-            NavigationStack {
-                ContactsView()
-                    .toolbar {
-                        ToolbarItem(placement: .topBarLeading) {
-                            Text("Контакты")
-                                .font(Font.custom("SF Pro Display", size: 18))
-                                .fontWeight(.semibold)
-                                .foregroundStyle(.text)
-                        }
+        ZStack {
+            VStack {
+                ZStack(alignment: .bottom) {
+                    TabView(selection: $selectedTab) {
+                        NavigationStack {
+                            ContactsView()
+                                .toolbar {
+                                    ToolbarItem(placement: .topBarLeading) {
+                                        Text("Контакты")
+                                            .font(Font.custom("SF Pro Display", size: 18))
+                                            .fontWeight(.semibold)
+                                            .foregroundStyle(.text)
+                                            .padding()
+                                    }
 
-                        ToolbarItem(placement: .topBarTrailing) {
-                            Image("plus")
-                                .foregroundStyle(.text)
+                                    ToolbarItem(placement: .topBarTrailing) {
+                                        Image("plus")
+                                            .foregroundStyle(.text)
+                                            .padding()
+                                    }
+                                }
                         }
+                        .tag(Tab.contacts)
+
+                        ChatsView()
+                            .tag(Tab.chats)
+
+                        MoreView()
+                            .tag(Tab.more)
                     }
+                }
             }
-                    .tabItem {
-                        Image("contacts")
-                    }
-                    .tag(Tabs.contacts)
 
-            ChatsView()
-                .tabItem {
-                    Image("chats")
-                }
-                .tag(Tabs.chats)
-
-            MoreView()
-                .tabItem {
-                    Image("more")
-                }
-                .tag(Tabs.more)
+            CustomTabBar(selectedTab: $selectedTab)
+                .frame(maxHeight: .infinity, alignment: .bottom)
+                .ignoresSafeArea()
         }
     }
 }
+
 
 #Preview {
     MainView()
