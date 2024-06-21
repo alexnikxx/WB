@@ -8,24 +8,44 @@
 import SwiftUI
 
 struct ContactCell: View {
+    @StateObject private var viewModel = ContactsViewModel()
     var contact: Contact
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             HStack(spacing: 16) {
-                if let image = contact.image {
-                    image
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 48, height: 48)
-                        .cornerRadius(16)
-                } else {
-                    Text(contact.initials)
-                        .foregroundStyle(.white)
-                        .frame(width: 48, height: 48)
-                        .background(Color.button)
-                        .cornerRadius(16)
+                ZStack {
+                    if let image = contact.image {
+                        image
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 48, height: 48)
+                            .cornerRadius(16)
+                    } else {
+                        Text(contact.initials)
+                            .foregroundStyle(.white)
+                            .frame(width: 48, height: 48)
+                            .background(Color.button)
+                            .cornerRadius(16)
+                    }
+
+                    if contact.status == "Online" {
+                        Image("online")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 14, height: 14)
+                            .offset(x: 20, y: -20)
+                    }
+
+                    if contact.hasStories {
+                        if contact.image != nil {
+                            viewModel.strokeForStories(colors: [.gradientStrokeImage1, .gradientStrokeImage2], startPoint: .leading, endPoint: .trailing)
+                        } else {
+                            viewModel.strokeForStories(colors: [.gradientStroke1, .gradientStroke2], startPoint: .topLeading, endPoint: .bottomTrailing)
+                        }
+                    }
                 }
+                .offset(x: contact.hasStories ? -4 : 0, y: 0)
 
                 VStack(alignment: .leading, spacing: 8) {
                     Text(contact.fullName)
@@ -37,6 +57,7 @@ struct ContactCell: View {
                         .font(Font.custom("SF Pro Display", size: 12))
                         .foregroundStyle(.secondaryText)
                 }
+
                 Spacer()
             }
         }
@@ -46,7 +67,7 @@ struct ContactCell: View {
 
 #Preview {
     VStack {
-        ContactCell(contact: Contact.samples[5])
         ContactCell(contact: Contact.samples[0])
+        ContactCell(contact: Contact.samples[2])
     }
 }
