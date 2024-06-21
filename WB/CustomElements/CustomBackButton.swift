@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct CustomBackButton: View {
-    @Environment(\.dismiss) var dismiss
-    
+    @Environment(\.presentationMode) var presentationMode
+
     var body: some View {
         Button {
-            dismiss()
+            presentationMode.wrappedValue.dismiss()
         } label: {
             Image(systemName: "chevron.left")
-                .foregroundStyle(.text)
                 .font(.caption.bold())
+                .foregroundStyle(.text)
         }
     }
 }

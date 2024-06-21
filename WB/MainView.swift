@@ -16,22 +16,7 @@ struct MainView: View {
                 ZStack(alignment: .bottom) {
                     TabView(selection: $selectedTab) {
                         NavigationStack {
-                            ContactsView()
-                                .toolbar {
-                                    ToolbarItem(placement: .topBarLeading) {
-                                        Text("Контакты")
-                                            .font(Font.custom("SF Pro Display", size: 18))
-                                            .fontWeight(.semibold)
-                                            .foregroundStyle(.text)
-                                            .padding()
-                                    }
-
-                                    ToolbarItem(placement: .topBarTrailing) {
-                                        Image("plus")
-                                            .foregroundStyle(.text)
-                                            .padding()
-                                    }
-                                }
+                            ContactsView()                              
                         }
                         .tag(Tab.contacts)
 

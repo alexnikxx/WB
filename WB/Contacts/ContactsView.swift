@@ -11,7 +11,8 @@ struct ContactsView: View {
     @StateObject private var viewModel = ContactsViewModel()
 
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
+            CustomNavBar(title: "Контакты", isBackButton: false, rightButtonIcon: "plus")
 
             ScrollView {
                 VStack(spacing: 4) {
@@ -19,13 +20,16 @@ struct ContactsView: View {
                         .padding(.top, 20)
 
                     ForEach(viewModel.filteredContacts, id: \.self) { contact in
-                        ContactCell(contact: contact)
+                        NavigationLink(destination: ContactDetailView(contact: contact)) {
+                            ContactCell(contact: contact)
+                        }
                         Divider()
                             .padding(.horizontal)
                     }
                 }
             }
         }
+        .ignoresSafeArea()
         .padding(.horizontal, 12)
     }
 }

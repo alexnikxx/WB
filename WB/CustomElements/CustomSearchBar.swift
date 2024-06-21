@@ -25,6 +25,17 @@ struct CustomSearchBar: View {
                     .font(Font.custom("SF Pro Display", size: 14))
                     .fontWeight(.semibold)
                     .foregroundStyle(.text)
+
+                Spacer()
+
+                if !searchText.isEmpty {
+                    Button {
+                        searchText = ""
+                    } label: {
+                        Image(systemName: "xmark.circle.fill")
+                            .foregroundStyle(.secondaryText)
+                    }
+                }
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(8)
